@@ -230,7 +230,7 @@ gh repo create codex-frugal-router --public --source . --remote origin --push
 git init -b main
 git add .
 git commit -m "Initial release: Codex frugal router demo"
-git remote add origin https://github.com/<你的帳號>/codex-frugal-router.git
+git remote add origin https://github.com/rtybrsky/codex-frugal-router.git
 git push -u origin main
 ```
 
