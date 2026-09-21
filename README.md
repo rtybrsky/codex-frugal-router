@@ -203,46 +203,6 @@ comparison_label 使用 router-ab-v1，project_label 使用 benchmark-01。
 - 統計 MCP 目前由同層的大型編排 demo 共用，尚未打包成獨立發行套件。
 - 路由結果仍取決於需求描述、可用模型與宿主能力。
 
-## 放到 GitHub
-
-建議 repository 名稱：`codex-frugal-router`。
-
-### 方法 A：使用 GitHub CLI
-
-先在此資料夾開啟 PowerShell：
-
-```powershell
-git init -b main
-git add .
-git commit -m "Initial release: Codex frugal router demo"
-gh auth login
-gh repo create codex-frugal-router --public --source . --remote origin --push
-```
-
-### 方法 B：使用 GitHub 網站
-
-1. 登入 GitHub，按右上角 `+` → `New repository`。
-2. Repository name 填 `codex-frugal-router`，選擇 `Public`。
-3. 不要勾選自動建立 README、`.gitignore` 或 License，避免第一次 push 衝突。
-4. 建立後，在本資料夾執行：
-
-```powershell
-git init -b main
-git add .
-git commit -m "Initial release: Codex frugal router demo"
-git remote add origin https://github.com/rtybrsky/codex-frugal-router.git
-git push -u origin main
-```
-
-上傳前建議執行 `git status` 與 `git diff --cached`，確認沒有本機 `.codex` 設定、usage JSONL、API key、私人路徑截圖或暫存資料。
-
-## 後續方向
-
-- 將統計 MCP 打包為本 repository 的獨立可安裝元件。
-- 建立固定 benchmark fixture 與可重複執行的報表。
-- 加入跨平台 Bash 安裝腳本。
-- 在宿主提供精確 usage 時，自動輸出 Markdown／CSV 比較結果。
-
 ## License
 
 本專案採用 [MIT License](LICENSE)，允許使用、修改與散布，但需保留原始著作權與授權聲明。
