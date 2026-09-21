@@ -10,7 +10,7 @@
    - `project_label`：基準組和候選組共用的專案或題組名稱。
    - `workflow_label`：固定為 `frugal-router`。
    - task tier：實際承擔成果的層級；不要把未使用的模型寫入 plan。
-3. 完成工作並用測試、編譯器或其他確定性 oracle 驗證後，呼叫 `record_task_result`。
+3. 完成工作並用測試、編譯器或其他確定性證據驗證後，呼叫 `record_task_result`。
 4. 最終回覆前立刻再次讀取 `get_usage_limits`，白名單化為 `end_usage`，再呼叫 `finish_run`。
 5. 基準與候選各至少累積 5 個相似 run 後，呼叫 `compare_workflows`。大型編排基準使用 `workflow_label: "large-orchestrator"`，省額度候選使用 `workflow_label: "frugal-router"`。
 
