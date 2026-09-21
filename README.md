@@ -245,4 +245,4 @@ git push -u origin main
 
 ## License
 
-目前尚未加入開源 License。若要讓別人合法重用、修改與散布，建議上傳前選擇 MIT License；若只想公開展示而不授權重用，可先維持無 License。
+本專案採用 [MIT License](LICENSE)，允許使用、修改與散布，但需保留原始著作權與授權聲明。
