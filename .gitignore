@@ -1,0 +1,22 @@
+# Local Codex state and secrets
+.codex/
+.env
+.env.*
+
+# Runtime statistics and logs
+data/
+*.jsonl
+*.log
+
+# Test and package artifacts
+.installer-test/
+node_modules/
+coverage/
+__pycache__/
+*.pyc
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

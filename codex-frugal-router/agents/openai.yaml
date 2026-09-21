@@ -1,0 +1,7 @@
+interface:
+  display_name: "Quality-First Frugal Router"
+  short_description: "Luna-first routing with quality-gated escalation"
+  default_prompt: "Use $codex-frugal-router to complete this task with the least costly model that can verify it reliably."
+
+policy:
+  allow_implicit_invocation: true
